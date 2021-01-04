@@ -11,4 +11,12 @@ class Form extends Component {
 
         this.state = this.initialStaate;
     }
+
+    handleChange = event => {
+        const {name, value} = event.target;
+
+        this.setState({
+            [name] : value
+        });
+    }
 }

@@ -39,11 +39,13 @@ const TableBody = (props) => {
 // }
 
 const Table = (props) => {
-    const { characterData } = props;
+    const { characterData, removeCharacter } = props;
     return (
         <table>
             <TableHeader />
-            <TableBody characterData={characterData} />
+            <TableBody
+            characterData={characterData}
+            removeCharacter={removeCharacter}/>
         </table>
     );
 }
